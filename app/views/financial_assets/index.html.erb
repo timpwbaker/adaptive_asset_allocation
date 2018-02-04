@@ -1,0 +1,4 @@
+<% financial_assets.sort_by{|asset| asset.six_month_momentum}.reverse.each do |asset| %>
+  <p><%= asset.ticker_code %>
+  <%= asset.six_month_momentum %>
+<% end %>

@@ -1,0 +1,6 @@
+<%= form_for financial_asset do |form_object| %>
+  Ticker code: <%= form_object.text_field :ticker_code %>
+  Quandl address: <%= form_object.text_field :quandl_address %>
+  <%= form_object.submit %>
+<% end %>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AdaptiveAssetAllocation</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section>
+      <nav style="width:100%">
+        <h1><%= link_to "AdaptiveAssetAllocation", root_path, class: "home" %>
+        <small>Spread the load</small></h1>
+      </nav>
+    </section>
+    <%= yield %>
+  </body>
+</html>
